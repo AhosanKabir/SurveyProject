@@ -1,0 +1,160 @@
+/* *************************** */
+/*component 1 : common header for all html file */
+.main_header_components {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+/* *************************** */
+/* component 2: search input component  */
+.search_component {
+  position: relative;
+  font-size: 16px;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.search_component {
+  display: inline-block;
+}
+
+.search_component input {
+  width: 100%;
+  padding: 9px 36px 9px 12px;
+  background: var(--bg-default);
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.search_component input:focus {
+  border-color: var(--bg-primary-default);
+}
+
+.search_component input::placeholder {
+  color: var(--text-disabled);
+}
+
+.search_component .fa-search {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 10px;
+  transform: translateY(-50%);
+  color: var(--text-placeholder);
+}
+
+/* *************************** */
+/* component 3: pill component  */
+
+.pill_components {
+  border-radius: 1000px;
+  border: 2px solid var(--border-color);
+  background: var(--bg-default);
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 4px;
+  width: max-content;
+}
+
+/* *************************** */
+/* component 4: expand collapse button component  */
+
+.expand_collapse_btn_blk {
+  display: flex;
+  align-items: center;
+}
+
+.expand_collapse_btn_blk button {
+  padding: 8px 14px;
+  border-right: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.expand_collapse_btn_blk button:hover {
+  background: var(--hover-bg-shadow);
+}
+
+.expand_collapse_btn_blk button:last-child {
+  border-right: none;
+}
+
+/* *************************** */
+/* component 5: select unselect button component  */
+
+.select_unselect_btn_blk {
+  display: flex;
+  align-items: center;
+}
+
+.select_unselect_btn_blk button {
+  padding: 8px 14px;
+  border-right: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.select_unselect_btn_blk button:hover {
+  background: var(--hover-bg-shadow);
+}
+
+.select_unselect_btn_blk button:last-child {
+  border-right: none;
+}
+
+/* *************************** */
+/* component 6: custom checkbox component  */
+
+.custom_check_components > input {
+  appearance: none;
+  position: relative;
+  max-width: 16px;
+  width: 100%;
+  padding: 0;
+  height: 16px;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+}
+
+.custom_check_components > input:checked {
+  border-color: var(--bg-primary-default);
+}
+
+.custom_check_components > input:checked::after {
+  opacity: 1;
+}
+
+.custom_check_components > input::after {
+  content: "";
+  position: absolute;
+  background: url("../img/thumb/check-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position: center center;
+  border-color: var(--bg-primary-default);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* *************************** */
+/* component 7: custom footer area component  */
+.custom_footer_area {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}

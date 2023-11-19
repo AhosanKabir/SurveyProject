@@ -5236,3 +5236,238 @@ input.answer_edit_text {
     align-items: flex-end;
   }
 }
+
+/*! ......................................*************************** addElimination html part css start from here *****************************.................................  */
+
+.addElimination_html_file .container {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.addElimination_main_area_wrapper {
+  background: var(--bg-default-1);
+  padding: 16px;
+}
+
+.addElimination_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.addElimination_header_left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.addElimination_header_left .search_component input {
+  height: 32px;
+}
+
+.addElimination_accordion_wrapper {
+  height: 503px;
+  overflow: auto;
+}
+
+.addElimination_accordion_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.addElimination_accordion_single_wrapper {
+  padding: 8px;
+  background: var(--bg-default);
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.addElimination_accordion_single_wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.addElimiation_accordion_header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.addElimiation_accordion_header_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.addElimiation_accordion_body {
+  padding-left: 40px;
+  padding-right: 8px;
+}
+
+.addElimiation_accordion_body_header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.addElimiation_accordion_body_header h3 {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+.addElimination_accordion_check_blk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.addElimination_accordion_check_blk p span {
+  color: var(--text-muted);
+}
+
+.addElimiation_accordion_body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.addElimiation_accordion_body ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.addElimination_accordion_count {
+  width: 65px;
+}
+
+.addElimination_pagination_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.addElimination_pagination_wrapper p {
+  font-size: 12px;
+}
+
+.addElimination_pagination_wrapper p span {
+  font-weight: 700;
+}
+
+.addElimination_items_per_page button {
+  padding: 9px 14px;
+  transition: 0.2s;
+  border-radius: 6px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.addElimination_items_per_page button:hover {
+  background: var(--bg-default);
+}
+
+.addElimination_pagination_btn_blk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addElimination_pagination_btn_blk button {
+  padding: 8px 14px;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.addElimination_pagination_btn_blk button:hover {
+  background: var(--bg-default);
+}
+
+.custom_footer_area {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+/* responsive css  */
+/* small screen :320px. */
+@media (max-width: 767px) {
+  .addElimination_header {
+    flex-direction: column;
+  }
+  .addElimination_header_left {
+    flex-direction: column;
+  }
+  .addElimination_accordion_check_blk p {
+    font-size: 12px;
+  }
+  .addElimination_accordion_count {
+    width: unset;
+    font-size: 12px;
+  }
+  .addElimiation_accordion_header_title {
+    font-size: 14px;
+  }
+  .addElimiation_accordion_body {
+    padding-left: 0;
+  }
+
+  .addElimination_pagination_wrapper {
+    flex-direction: column;
+  }
+}
+
+/*! ......................................*************************** uploadUser html part css start from here *****************************.................................  */
+
+.uploadUser_html_file .container {
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.uploadUser_input_blk {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.uploadUser_input_blk label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.uploadUser_input_blk input {
+  height: 40px;
+}
+.uploadUser_textarea_blk textarea {
+  resize: none;
+  width: 100%;
+  min-height: 536px;
+  padding: 9px 12px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.uploadUser_textarea_blk textarea:focus {
+  border-color: var(--border-primary);
+}
+.uploadUser_warn_text {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-top: 16px;
+  display: inline-block;
+}

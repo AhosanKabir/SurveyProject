@@ -380,4 +380,21 @@ $(document).ready(function () {
   $(".survey_tooltip--pie").on("mouseleave", function () {
     $(this).closest(".pie_hover_blk").find(".pie_hover_text").hide(150);
   });
+
+
+
+
+  // phase 3 start 
+   // accordion ----------------
+
+   $(".addElimiation_accordion_header").click(function (e) {
+    e.preventDefault();
+    $(this)
+      .closest(".addElimination_accordion_single_wrapper")
+      .find(".addElimiation_accordion_body,.accordion_close,.accordion_open")
+      .toggle();
+  });
+
+
+
 });
