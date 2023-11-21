@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+
+    <body>
+
+        <div  class="recontacts_html_file">
+            <!-- header part  -->
+            <div class="header_area">
+                <div class="container">
+                    <div class="main_header_components">
+                        <div class="Common_header_wrapper">
+                            <a href="#">
+                                Edit Audience
+                            </a>
+                            <span class="nav__line"></span>
+                            <span class="survey_tooltip survey_tooltip--x">
+                                <i class="fa-solid fa-x"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navigation tab bar  -->
+            <div class="navigation_area_blk">
+                <div class="container">
+                    <div class="nav_flex_wrapper">
+                        <ul class="custom_nav_wrapper">
+                            <li>
+                                <a href="#">General Settings</a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">Recontacts</a>
+                            </li>
+                            <li>
+                                <a href="#">Eliminations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- recontacts main area  -->
+            <div class="recontacts_main_area">
+                <div class="container">
+                    <div class="recontacts_main_wrapper">
+                        <div class="recontacts_header_wrapper">
+                            <div class=" recontacts_main_header">
+                                <p class="topic_title">
+                                    <span><i class="fa-solid fa-address-book"></i></span>
+                                    Recontacts
+                                </p>
+        
+                                <div class="recontacts_pill_area">
+                                    <p class="pill_components">
+                                        ENABLED
+                                    </p>
+                                    <span>
+                                        <i class="fa-solid fa-square-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <p class="recontacts_header_text">
+                                This feature allows for the possibility of recontacting participants for follow-up surveys or additional study phases. When enabled, the same set of users may be included in subsequent surveys, providing continuity and allowing for longitudinal insights.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="f-option" name="selector">
+                                    <label for="f-option">This Audience will require a Recontact in the future</label>
+                                    
+                                    <div class="check"></div>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" id="s-option" name="selector" checked>
+                                    <label for="s-option">This Audience is a Recontact of a previous Audience</label>
+                                    
+                                    <div class="check"><div class="inside"></div></div>
+                                </li>
+                            </ul>
+
+
+                            <!-- tab area  -->
+                            <div class="recontacts_tab">
+                                <!-- tabcontainer -->
+                                <div class="tabContainer">
+                                    <div class="progressAudience_tab_header">
+                                        <div class="tab_buttons">
+                                            <button onclick="showPanels(0)" class="tabButton">Select Source(s)</button>
+                                            <button onclick="showPanels(1)" class="tabButton">
+                                                <i class="fa-solid fa-upload"></i> Upload Users
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab pannel 1  -->
+                                    <div class="tab_pannels">
+                                       <div class="recontacts_tab_1_contents">
+                                            <span>
+                                                No Recontact Sources added yet..
+                                            </span>
+                                       </div>
+                                    </div>
+                                    <!-- tab pannel 2  -->
+                                    <div class="tab_pannels">
+                                        <div class="recontacts_tab_2_contents">
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        <i class="fa-solid fa-book"></i>
+                                                        User List - 13 Nov 2023
+                                                    </p>
+
+                                                    <div>
+                                                        <p>
+                                                            <span class="survey_tooltip">
+                                                                <i class="fa-solid fa-users"></i>
+                                                            </span>
+                                                            <span>985</span>
+                                                        </p>
+
+
+                                                        <span class="survey_tooltip survey_tooltip--eye">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </span>
+
+                                                        <span class="survey_tooltip survey_tooltip--trash">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <p>
+                                                        <i class="fa-solid fa-book"></i>
+                                                        User List - 13 Nov 2023
+                                                    </p>
+                                                    
+                                                    <div>
+                                                        <p>
+                                                            <span class="survey_tooltip">
+                                                                <i class="fa-solid fa-users"></i>
+                                                            </span>
+                                                            <span>985</span>
+                                                        </p>
+
+
+                                                        <span class="survey_tooltip survey_tooltip--eye">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </span>
+
+                                                        <span class="survey_tooltip survey_tooltip--trash">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="recontacts_tab_btn">
+                                    <button class="primary_btn">Manage Source(s)</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- bottom part  -->
+            <div class="bbbb_fixed">
+                <div class="container">
+                    <div class="bottom_part_of_the_body">
+                        <div class="bottom_left_part_of_the_body">
+                            <button class="primary_btn btn_default">
+                                Set Audience
+                            </button>
+                            <button class="primary_btn cancel_btn">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+
+        <script>
+            var tabButtons = document.querySelectorAll(".tabContainer .tab_buttons button");
+            var tabPanels = document.querySelectorAll(".tabContainer .tab_pannels");
+
+            function showPanels(panelIndex){
+                tabPanels.forEach(function(node){
+                    node.style.display = "none";
+                });
+
+                tabPanels[panelIndex].style.display = "block";
+
+                tabButtons.forEach(function(button){
+                    button.classList.remove('active')
+                });
+
+                tabButtons[panelIndex].classList.add("active");
+            }
+
+            showPanels(1);
+        </script>
+
+    </body>
+</html>

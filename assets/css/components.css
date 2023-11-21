@@ -158,3 +158,52 @@
   padding-top: 24px;
   padding-bottom: 40px;
 }
+
+/* *************************** */
+/* component 8: single_choice_btn  component  */
+
+a.single_choice_btn {
+  font-size: 12px;
+  background: none;
+  margin-left: 4px;
+  border-radius: 6px;
+}
+
+a.single_choice_btn:hover {
+  background: var(--hover-bg-shadow);
+}
+
+
+/* *************************** */
+/* component 9: custom navbar tab  component  */
+
+.custom_nav_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.custom_nav_wrapper li {
+  display: inline-block;
+}
+
+.custom_nav_wrapper li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom_nav_wrapper li a:hover {
+  border-bottom: 3px solid #000;
+  color: #000;
+}
+
+.custom_nav_wrapper li a.active {
+  border-bottom: 3px solid var(--bg-primary-default);
+  color: var(--bg-primary-default);
+}
