@@ -5403,8 +5403,16 @@ input.answer_edit_text {
   border-radius: 4px;
 }
 
+.addElimination_pagination_btn_blk button i{
+  font-size: 12px;
+}
+
 .addElimination_pagination_btn_blk button:hover {
-  background: var(--bg-default);
+  background: var(--bg-default-1);
+}
+
+.apbb_arrow_img {
+  width: 12px;
 }
 
 .custom_footer_area {
@@ -5770,7 +5778,7 @@ table tr td:nth-child(10) {
 }
 
 .live_btn:hover {
-  background: rgba(78, 124, 29, 0.1);
+  background: rgba(107, 176, 33, 0.2);
 }
 
 /* rigth side  */
@@ -5849,6 +5857,15 @@ table tr td:nth-child(10) {
   display: inline-block;
 }
 
+.prhcb:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.prhcb:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 .progressHtml_child_bg_1 {
   width: 5%;
   background-color: var(--red-300);
@@ -5890,6 +5907,33 @@ table tr td:nth-child(10) {
   border-bottom: var(--stroke-default);
 }
 
+.single_progressHtml_right_wrapper ul li:first-child .sprw_li_right span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progressAudience_statistic_field_sample
+  .single_progressHtml_right_wrapper
+  ul
+  li:first-child
+  .sprw_li_right
+  span:first-child {
+  width: unset;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.progressAudience_statistic_field_sample
+  .single_progressHtml_right_wrapper
+  ul
+  li
+  .sprw_li_right
+  span:first-child {
+  width: unset;
+  margin-right: 8px;
+  font-weight: 400;
+}
+
 .sprw_li_right span {
   display: inline-block;
   text-align: right;
@@ -5912,6 +5956,7 @@ table tr td:nth-child(10) {
   width: 14px;
   height: 14px;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .sprw_li_left_1 span {
@@ -5963,6 +6008,16 @@ table tr td:nth-child(10) {
   border: var(--stroke-default);
 }
 
+.audiences_survey_single_list .designerOverview_header_progress_wrapper {
+  padding-top: 16px;
+}
+
+.audiences_survey_single_list
+  .designerOverview_header_progress_wrapper
+  .progress_bar {
+  background: var(--bg-default-1);
+}
+
 /* small screen :320px. */
 @media (max-width: 767px) {
   .single_progressHtml_left_wrapper .audiences_survey_bottom_blk {
@@ -6000,10 +6055,6 @@ table tr td:nth-child(10) {
   .sprw_li_left p {
     font-size: 14px;
   }
-
-  .sprw_li_right span {
-    width: 45px;
-  }
 }
 
 /*! ......................................*************************** progressAudience html part css start from here *****************************.................................  */
@@ -6017,6 +6068,39 @@ table tr td:nth-child(10) {
 
 .progressAudience_main_area .audiences_overview_wrapper {
   padding: 0;
+}
+
+.progressAudience_filter_area {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+}
+
+.progressAudience_filter_title {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.progressAudience_filter_title span {
+  font-weight: 700;
+}
+
+.progressAudience_filter_input {
+  position: relative;
+}
+
+.progressAudience_filter_input .fa-caret-down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+
+.progressAudience_filter_input input {
+  padding-right: 25px;
+  height: 40px;
 }
 
 .progressAudience_main_area .audiences_survey_single_list {
@@ -6060,6 +6144,10 @@ table tr td:nth-child(10) {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
+  background: var(--bg-default);
+  border: var(--stroke-default);
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 .progressAudience_shedule_left {
@@ -6186,6 +6274,7 @@ table tr td:nth-child(10) {
 .pate_single_time_blk {
   text-align: center;
   padding: 8px 0;
+  width: 80px;
 }
 
 .pate_single_time_blk p:first-child {
@@ -6193,7 +6282,7 @@ table tr td:nth-child(10) {
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .pate_single_time_blk p:first-child span {
@@ -6203,6 +6292,21 @@ table tr td:nth-child(10) {
 
 .pate_single_time_blk p {
   font-size: 12px;
+}
+
+.length_of_interview_percentage {
+  color: var(--text-warning-default);
+}
+
+.conversion_rate {
+  color: var(--text-success-default);
+}
+
+.incident_rate {
+  color: var(--text-warning-default);
+}
+.drop_rate {
+  color: var(--text-danger);
 }
 
 .pate_vs {
@@ -6435,8 +6539,199 @@ table tr td:nth-child(10) {
   flex-shrink: 0;
 }
 
+.progressAudience_recommended_right_time_blk .pate_single_time_blk {
+  max-width: 100%;
+  width: max-content;
+}
+
 .pate_single_special_usd {
   padding: 8px 32px;
+}
+
+.pate_single_special_usd_green {
+  color: var(--text-success-default);
+}
+
+/* Big screen :1200px. */
+@media (min-width: 1440px) and (max-width: 1700px) {
+  .pate_single_special_usd {
+    padding: 8px 12px;
+  }
+
+  .progressAudience_recommended_right_time_blk .pate_time_blk {
+    gap: 8px;
+  }
+
+  .progressAudience_recommended_right_time_blk .pate_time_wrapper {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .progressAudience_recommended_right_time_blk .pate_time_blk {
+    flex-direction: column;
+  }
+
+  .tab_buttons button {
+    padding: 9px 8px;
+    padding-bottom: 5px;
+  }
+  .tabContainer {
+    padding: 16px 16px;
+  }
+
+  .progressAudience_tab_header h5 {
+    font-size: 18px;
+  }
+
+  .progressAudience_tab_elements .pate_time_wrapper {
+    gap: 4px;
+  }
+
+  .progressAudience_tab_elements .pate_time_blk {
+    gap: 8px;
+  }
+  .prc_single_blk {
+    padding: 16px;
+  }
+
+  .prc_single_blk .topic_title {
+    font-size: 16px;
+  }
+}
+
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .progressAudience_recommended_right_time_blk .pate_time_blk {
+    flex-direction: column;
+  }
+}
+
+/* small screen :320px. */
+@media (max-width: 767px) {
+  .progressAudience_shedule {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .progressAudience_tab_header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .progressAudience_shedule_left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .progressAudience_shedule_right {
+    flex-direction: column-reverse;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .progressAudience_shedule_date {
+    text-align: center;
+  }
+
+  .progressAudience_shedule_date.pasd_align_text {
+    text-align: center;
+  }
+
+  .progressAudience_shedule_date_blk {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .prc_single_btns_blk > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .prc_single_btns_blk {
+    flex-direction: column;
+  }
+
+  .progressAudience_recommended_right_time_blk .pate_time_blk {
+    flex-direction: column;
+  }
+
+  .progressAudience_recommended_right_time_blk .pate_time_wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .progressAudience_recommended_right_time_blk .pate_divider {
+    min-height: 26px;
+  }
+
+  .progressAudience_tab_elements {
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: var(--Drop-Shadow);
+  }
+
+  .progressAudience_tab_elements .pate_time_blk {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .progressAudience_tab_elements .pate_divider {
+    display: none;
+  }
+
+  .tab_pannels_chart_contents {
+    flex-direction: column;
+  }
+
+  .tab_pannels_chart_left_contents {
+    padding: 10px 0;
+    margin-inline: auto;
+  }
+  .tab_pannels_chart_right_contents ul li {
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: var(--Drop-Shadow);
+  }
+
+  .tab_pannels_chart_wrapper {
+    padding: 0;
+  }
+
+  .progressAudience_main_wrapper {
+    padding: 0;
+  }
+
+  .progressAudience_statistic_wrapper {
+    padding: 0;
+  }
+
+  .progressAudience_recommended_left {
+    padding: 0;
+  }
+
+  .progressAudience_recommended_right {
+    padding: 12px 8px;
+  }
+
+  .prc_single_blk {
+    padding: 16px 8px;
+    box-shadow: var(--Drop-Shadow);
+  }
+
+  .progressAudience_filter_title {
+    flex-direction: column;
+  }
+
+  .progressAudience_filter_area {
+    flex-direction: column;
+  }
+
+  .progressAudience_filter_area {
+    gap: 6px;
+  }
 }
 
 /*! ......................................*************************** recontacts html part css start from here *****************************.................................  */

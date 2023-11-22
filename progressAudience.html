@@ -568,46 +568,64 @@
                         </div>
                     </div>
 
+                    
                     <!-- progressAudience main statistic area  -->
                     <div class="progressAudience_statistic_wrapper">
-                        <div class="progressAudience_statistic_field_sample">
 
-                            <!-- calender field  -->
-                            <div class="progressAudience_shedule">
-                                <div class="progressAudience_shedule_left">
-                                    <div class="progressAudience_shedule_calander_img">
-                                        <img src="assets/img/thumb/calendar-range.png" alt="">
-                                    </div>
-
-                                    <div class="progressAudience_shedule_date_blk">
-                                        <div class="progressAudience_shedule_date">
-                                            <span>Start Date</span>
-                                            <p>01 Aug 2023 16:20</p>
-                                        </div>
-
-                                        <span class="bamboo"></span>
-
-                                        <div class="progressAudience_shedule_date">
-                                            <span>Delivery Date</span>
-                                            <p>02 Aug 2023 08:00</p>
-                                        </div>
-                                    </div>
+                        <!-- calender field  -->
+                        <div class="progressAudience_shedule">
+                            <div class="progressAudience_shedule_left">
+                                <div class="progressAudience_shedule_calander_img">
+                                    <img src="assets/img/thumb/calendar-range.png" alt="">
                                 </div>
 
-                                <div class="progressAudience_shedule_right">
-                                    <div class="progressAudience_shedule_date pasd_align_text">
-                                        <span>Remaining</span>
-                                        <p>8hs 52min</p>
+                                <div class="progressAudience_shedule_date_blk">
+                                    <div class="progressAudience_shedule_date">
+                                        <span>Start Date</span>
+                                        <p>01 Aug 2023 16:20</p>
                                     </div>
-                                    <div class="progressAudience_shedule_clock_img">
-                                        <img src="assets/img/thumb/calendar-clock.png" alt="">
+
+                                    <span class="bamboo"></span>
+
+                                    <div class="progressAudience_shedule_date">
+                                        <span>Delivery Date</span>
+                                        <p>02 Aug 2023 08:00</p>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="progressAudience_shedule_right">
+                                <div class="progressAudience_shedule_date pasd_align_text">
+                                    <span>Remaining</span>
+                                    <p>8hs 52min</p>
+                                </div>
+                                <div class="progressAudience_shedule_clock_img">
+                                    <img src="assets/img/thumb/calendar-clock.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progressAudience_statistic_field_sample">
+
+                            <div class="progressAudience_filter_area">
+                                <div class="progressAudience_filter_title">
+                                    <span>Average from:</span>
+                                    <div class="progressAudience_filter_input">
+                                        <input type="text" placeholder="Last 24 hs">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <span class="nav__line"></span>
+
+                                <span class="survey_tooltip survey_tooltip--minus">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </span>
+
+                            </div>
+
                             <!-- chart part  -->
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-xl-6">
                                     <!-- tabcontainer -->
                                     <div class="tabContainer">
                                         <div class="progressAudience_tab_header">
@@ -653,7 +671,7 @@
 
                                                         <div class="pate_single_time_blk">
                                                             <p>
-                                                                18 <span>hrs</span>
+                                                                0 <span>hrs</span>
                                                             </p>
                                                             <p>Difference</p>
                                                         </div>
@@ -686,7 +704,7 @@
                                                         <div class="pate_divider"></div>
 
                                                         <div class="pate_single_time_blk">
-                                                            <p>
+                                                            <p class="length_of_interview_percentage">
                                                                 +2 <span>min</span>
                                                             </p>
                                                             <p>Difference</p>
@@ -720,7 +738,7 @@
                                                         <div class="pate_divider"></div>
 
                                                         <div class="pate_single_time_blk">
-                                                            <p>
+                                                            <p class="conversion_rate">
                                                                 +4 <span>%</span>
                                                             </p>
                                                             <p>Difference</p>
@@ -754,7 +772,7 @@
                                                         <div class="pate_divider"></div>
 
                                                         <div class="pate_single_time_blk">
-                                                            <p>
+                                                            <p class="incident_rate">
                                                                 -3 <span>%</span>
                                                             </p>
                                                             <p>Difference</p>
@@ -788,7 +806,7 @@
                                                         <div class="pate_divider"></div>
 
                                                         <div class="pate_single_time_blk">
-                                                            <p>
+                                                            <p class="drop_rate">
                                                                 +8 <span>%</span>
                                                             </p>
                                                             <p>Difference</p>
@@ -817,7 +835,7 @@
                                                                 <h4>Estimated</h4>
                                                                 <div>
                                                                     <p>20%</p>
-                                                                    <span>(+4%)</span>
+                                                                    <span class="length_of_interview_percentage">(+4%)</span>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -916,7 +934,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-xl-6">
                                     <div class="single_progressHtml_right_wrapper">
                                         <div class="sprw_1">
                                             <p>Sample Funnel</p>
@@ -948,6 +966,7 @@
                                                 <div class="sprw_li_left sprw_li_left_0"></div>
                 
                                                 <div class="sprw_li_right">
+                                                    <span>Last 24 hs</span>
                                                     <span>%</span>
                                                     <span>#</span>
                                                 </div>
@@ -959,6 +978,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>-2.00%</span>
                                                     <span>2%</span>
                                                     <span>20</span>
                                                 </div>
@@ -971,6 +991,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>+8.02%</span>
                                                     <span>20%</span>
                                                     <span>200</span>
                                                 </div>
@@ -983,6 +1004,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>-21.24%</span>
                                                     <span>15%</span>
                                                     <span>150</span>
                                                 </div>
@@ -995,6 +1017,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>0%</span>
                                                     <span>2%</span>
                                                     <span>20</span>
                                                 </div>
@@ -1007,6 +1030,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>-6.35%</span>
                                                     <span>5%</span>
                                                     <span>50</span>
                                                 </div>
@@ -1019,6 +1043,7 @@
                                                 </div>
                 
                                                 <div  class="sprw_li_right">
+                                                    <span>-2.08%</span>
                                                     <span>25%</span>
                                                     <span>250</span>
                                                 </div>
@@ -1033,7 +1058,7 @@
                         <!-- recommendation area start  -->
                         <div class="progressAudience_recommended_wrapper">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-xl-6">
                                     <div class="progressAudience_recommended_left">
                                         <div class="progressAudience_recommended_header">
                                             <p class="topic_title">Recommended Actions</p>
@@ -1111,7 +1136,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-xl-6">
                                     <div class="progressAudience_recommended_right">
                                         <div class="progressAudience_recommended_header">
                                             <p class="topic_title">Costs</p>
@@ -1160,7 +1185,7 @@
                                                     <div class="pate_divider"></div>
 
                                                     <div class="pate_single_time_blk">
-                                                        <p>
+                                                        <p class="pate_single_special_usd_green">
                                                             <i class="fa-solid fa-dollar-sign"></i> +995.25 <span>usd</span>
                                                         </p>
                                                         <p>Difference</p>
