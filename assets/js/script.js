@@ -395,6 +395,22 @@ $(document).ready(function () {
       .toggle();
   });
 
+  // run btn  ----------------
 
+  $(".run_table_btn").click(function (e) {
+    e.preventDefault();
+    $(this)
+      .closest(".run_blk")
+      .find(".hide_run_btn_blk,.run_table_btn")
+      .toggle();
+  });
+
+  $(".survey_tooltip--chart").click(function (e) {
+    e.preventDefault();
+    $(this)
+      .closest(".table_btn_chart")
+      .find(".table_btn_chart_details")
+      .toggle();
+  });
 
 });
