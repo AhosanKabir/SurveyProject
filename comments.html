@@ -1,0 +1,507 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/chosen.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body style="background-color: #f9f9fa;">
+
+        <div class="commentsAndUpdate_modal">
+            <div class="tabContainer">
+                <div class="tab_nav_btns">
+                    <div class="tab_buttons">
+                        <button onclick="showPanels(0)" class="tabButton">
+                            <i class="fa-solid fa-comment"></i> 
+                            Comments 
+                            <span class="comments_count">5</span>
+                        </button>
+                        <button onclick="showPanels(1)" class="tabButton">
+                            <i class="fa-solid fa-file-lines"></i>
+                            Updates
+                        </button>
+                    </div>
+
+                    <span class="nav__line"></span>
+
+                    <span class="survey_tooltip survey_tooltip--x">
+                        <i class="fa-solid fa-x"></i>
+                    </span>
+                </div>
+
+                <div class="tab_pannels">
+                    <div class="comments_wrapper">
+                        <div class="comments_list_wrapper">
+                            <div class="comments_scroll_wrapper">
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Survey looks promising! Wondering if adding more targeting variables would boost response rates?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>John Doe</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Absolutely! It's live now. Let's see how it goes. Thoughts on the initial audience?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>Mark Twain</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Great start! Maybe refine by adding age groups. What do you think?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>John Doe</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Adjusted the audience. Now, fingers crossed for diverse insights. Any tips for result checking frequency?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>Mark Twain</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Daily checks work well for me. Also, consider tweaking survey appearance for better engagement.</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>John Doe</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Survey looks promising! Wondering if adding more targeting variables would boost response rates?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>Mark Twain</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Daily checks work well for me. Also, consider tweaking survey appearance for better engagement.</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>John Doe</span></p>
+                                </div>
+
+                                <!-- single comments -->
+                                <div class="comments_list_item">
+                                    <div class="comment_text">
+                                        <p>Survey looks promising! Wondering if adding more targeting variables would boost response rates?</p>
+                                    </div>
+
+                                    <p class="comments_person">Comment added on <span>Fri 24 Sept 2023, 16:49</span> by <span>Mark Twain</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leave_comments_wrapper">
+                            <div class="lcw_header">
+                                <p class="topic_title" >Leave a comment</p>
+                                <span class="nav__line"></span>
+                            </div>
+
+                            <div class="uploadUser_textarea_blk">
+                                <textarea placeholder="Please insert.."></textarea>
+                            </div> 
+
+                            <div class="leave_comments_btn">
+                                <button class="primary_btn btn_default">
+                                    Add Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="commentsClose_area">
+                            <button class="primary_btn commentsClose_btn">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_pannels">
+                    <!-- update table  -->
+                    <div class="updateTable_wrapper">
+                        <div class="updateTable_blk">
+                            <div class="table-responsive">
+                                <table class="table tab">
+                                    <thead>
+                                        <tr>
+                                            <th class="date_th">Date/Time</th>
+                                            <th class="id_th">ID</th>
+                                            <th class="medium_th">Updated By</th>
+                                            <th  class="medium_th">Audience</th>
+                                            <th class="long_th">Action</th>
+                                            <th class="price_th">New Price</th>
+                                            <th class="max_th">Max Feasibility</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="date_th">
+                                                <p>
+                                                    Fri 24 Sept 2023
+                                                    <span>16:35:27</span>
+                                                </p>
+                                            </td>
+                                            <td class="id_th">214567</td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    John Doe
+                                                    <span>(511)</span>
+                                                </p>
+                                            </td>
+                                            <td class="medium_th">
+                                                <p>
+                                                    Audience #1
+                                                    <span>(316793)</span>
+                                                </p>
+                                            </td>
+                                            <td class="long_th">
+                                                Set Sample [DE] Gen Pop 18 - 99 Male F...
+                                            </td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="commentsClose_area">
+                            <button class="primary_btn commentsClose_btn">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/chosen.jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+        <script>
+            var tabButtons = document.querySelectorAll(".tabContainer .tab_buttons button");
+            var tabPanels = document.querySelectorAll(".tabContainer .tab_pannels");
+
+            function showPanels(panelIndex){
+                tabPanels.forEach(function(node){
+                    node.style.display = "none";
+                });
+
+                tabPanels[panelIndex].style.display = "block";
+
+                tabButtons.forEach(function(button){
+                    button.classList.remove('active')
+                });
+
+                tabButtons[panelIndex].classList.add("active");
+            }
+
+            showPanels(0);
+        </script>
+
+    </body>
+</html>

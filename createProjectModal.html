@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/chosen.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+
+        <div class="createProject_modal">
+            <!-- default nav header  -->
+            <div class="container">
+                <div class="Common_header_area">
+                    <div class="Common_header_wrapper">
+                        <a href="#">
+                            Project Details
+                        </a>
+                        <span class="nav__line"></span>
+                        <span class="survey_tooltip survey_tooltip--x">
+                            <i class="fa-solid fa-x"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- main part  -->
+            <div class="container">
+                <!-- project name  -->
+                <div class="cpm_name">
+                    <h5 class="topic_title">Project Name</h5>
+                    <p>
+                        Concept Testing 02 Oct 23
+                    </p>
+                </div>
+                
+                <!-- project description  -->
+                <div class="cpm_description">
+                    <h5 class="topic_title">Project Description/Objectives</h5>
+                    <!-- texr area  -->
+                    <div class="cpm_textarea">
+                        <textarea placeholder="Please insert.."></textarea>
+                     </div>  
+                </div>
+
+                <!-- select area  -->
+                <div class="cpm_select_area">
+                    <div class="cpm_select_blk">
+                        <p class="cpm_select_title">Preferred Currency:</p>
+                        <div class="select_area">
+                            <select>
+                                <option disabled selected hidden value="0">Please select..</option>
+                                <option value="1">USD</option>
+                                <option value="2">TAKA</option>
+                                <option value="3">Euro</option>
+                            </select>
+
+                            <span>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cpm_select_blk">
+                        <p class="cpm_select_title">Customer Type:</p>
+                        <div class="select_area">
+                            <select>
+                                <option disabled selected hidden value="0">Please select..</option>
+                                <option value="1">USD</option>
+                                <option value="2">TAKA</option>
+                                <option value="3">Euro</option>
+                            </select>
+
+                            <span>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cpm_select_blk ">
+                        <p class="cpm_select_title">Selected Template:</p>
+                        <div class="cpm_template_elements">
+                            <div class="cpm_template_header">
+                                <h4>Product Innovation</h4>
+                                <span class="nav__line"></span>
+                            </div>
+
+                            <div class="cpm_template_contents">
+                                <h3>Price Testing</h3>
+                                <p>Find the optimal price for your product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bottom part  -->
+                <div class="">
+                    <div class="container">
+                        <div class="bottom_part_of_the_body">
+                            <div class="bottom_left_part_of_the_body">
+                                <button class="primary_btn btn_default">
+                                    Create Project
+                                </button>
+                                <button class="primary_btn cancel_btn">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/chosen.jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".select_currency").chosen();
+                $(".select_language").chosen();
+            });
+        </script>
+
+    </body>
+</html>

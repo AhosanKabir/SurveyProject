@@ -1,4 +1,11 @@
 /* *************************** */
+/* default  */
+.mb_8{
+  margin-bottom: 8px;
+}
+
+
+/* *************************** */
 /*component 1 : common header for all html file */
 .main_header_components {
   padding-top: 40px;
@@ -103,6 +110,8 @@
   align-items: center;
   gap: 4px;
   border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   transition: 0.2s;
   font-size: 12px;
   font-weight: 700;
@@ -207,3 +216,66 @@ a.single_choice_btn:hover {
   border-bottom: 3px solid var(--bg-primary-default);
   color: var(--bg-primary-default);
 }
+
+
+
+/* *************************** */
+/* component 10: chosen select  component  */
+
+
+.chosen_select_wrapper .chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 40px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-default);
+  background-clip: padding-box;
+  box-shadow: none;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 40px;
+}
+
+.chosen_select_wrapper .chosen-container-single .chosen-single div b {
+  background: url("chosen-sprite.png") no-repeat 0px 10px;
+}
+
+
+/* *************************** */
+/* component 11: large title  */
+.large_title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+/* *************************** */
+/* component 12: modified chosen  */
+
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 40px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-default);
+  background-clip: padding-box;
+  box-shadow: none;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 40px;
+}
+
+.chosen-container-single .chosen-single div b {
+  background: url("chosen-sprite.png") no-repeat 0px 10px;
+}
+
+

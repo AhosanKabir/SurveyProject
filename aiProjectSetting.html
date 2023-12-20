@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/chosen.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+
+        <div class="aiProjectSetting_modal">
+            <!-- default nav header  -->
+            <div class="container">
+                <div class="Common_header_area">
+                    <div class="Common_header_wrapper">
+                        <a href="#">
+                            Create Audience
+                        </a>
+                        <span class="nav__line"></span>
+                        <span class="survey_tooltip survey_tooltip--x">
+                            <i class="fa-solid fa-x"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- main part  -->
+            <div class="container">
+                <!-- complete count area start -->
+                <div class="count_complete_survey">
+                    <h5 class="topic_title">How many completes do you need?</h5>
+                    <!-- ccs means ->> count_complete_survey -->
+                    <div class="ccs_wrapper">
+                        <button class="ccs_count">200</button>
+                        <button class="ccs_count">300</button>
+                        <button class="ccs_count">400</button>
+                        <button class="ccs_count">500</button>
+                        <button class="ccs_count">1000</button>
+                        <input type="text" class="ccs_input" placeholder="custom..">
+                    </div>
+                </div>
+
+                <!-- select area start -->
+                <div class="createAudience_select_wrapper">
+                    <div class="createAudience_select_wrapper_single">
+                        <h5 class="topic_title">Country</h5>
+                        <!--!!! chosen area start !!-->
+                        <select class="chosen-select select_country" data-placeholder="Please select..">
+                            <option value="1">Germany</option>
+                            <option value="2">Bangladesh</option>
+                            <option value="3">America</option>
+                            <option value="4">Spain</option>
+                            <option value="5">Arab</option>
+                            <option value="6">another..</option>
+                        </select>
+                        <!--!!! chosen area end !!-->
+                    </div>
+                    <div class="createAudience_select_wrapper_single">
+                        <h5 class="topic_title">Survey Language</h5>
+                        <!--!!! chosen area start !!-->
+                        <select class="chosen-select select_language" data-placeholder="Please select..">
+                            <option value="1">German</option>
+                            <option value="2">Spanish Castillian</option>
+                            <option value="3">Aragonese</option>
+                            <option value="4">Bangla</option>
+                            <option value="5">Arabic</option>
+                            <option value="6">another..</option>
+                        </select>
+                        <!--!!! chosen area end !!-->
+                    </div>
+                </div>
+
+                <!-- bottom part  -->
+                <div class="bbbb_fixed">
+                    <div class="container">
+                        <div class="bottom_part_of_the_body">
+                            <div class="bottom_left_part_of_the_body">
+                                <button class="primary_btn btn_default">
+                                    Set Project Settings
+                                </button>
+                                <button class="primary_btn cancel_btn">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/chosen.jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".select_country").chosen();
+                $(".select_language").chosen();
+            });
+        </script>
+
+    </body>
+</html>

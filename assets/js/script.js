@@ -85,6 +85,15 @@ $(document).ready(function () {
       .toggle();
   });
 
+  // page 4 list
+
+  $(".accordion_click_blk_page").click(function (e) {
+    e.preventDefault();
+    $(this).find(".accordion_close_page,.accordion_open_page").toggle();
+
+    $(".page_4_li_list").toggleClass("active");
+  });
+
   // phase 2 background set --
   // audience question part --
 
@@ -381,13 +390,10 @@ $(document).ready(function () {
     $(this).closest(".pie_hover_blk").find(".pie_hover_text").hide(150);
   });
 
+  // phase 3 start
+  // accordion ----------------
 
-
-
-  // phase 3 start 
-   // accordion ----------------
-
-   $(".addElimiation_accordion_header").click(function (e) {
+  $(".addElimiation_accordion_header").click(function (e) {
     e.preventDefault();
     $(this)
       .closest(".addElimination_accordion_single_wrapper")
@@ -411,6 +417,110 @@ $(document).ready(function () {
       .closest(".table_btn_chart")
       .find(".table_btn_chart_details")
       .toggle();
+  });
+
+  // phase 4 start ================
+
+  $(".open_dashboard_btn").click(function () {
+    $(this)
+      .closest(".dashboard_single_item_content")
+      .find(".dashboard_open_hide_blk")
+      .toggle(top, 150);
+
+    $(this)
+      .closest(".dashboard_single_item_content")
+      .find(".designerOverview_progress_click_event")
+      .toggleClass("active");
+  });
+
+  // setUp btn event
+  $(".setUp_btn_click").click(function () {
+    $(this).closest(".setUp_btn_blk").find(".setup_click_content").toggle(150);
+
+    $(".animate_caret").toggleClass("active");
+  });
+
+  // createNewProject tabs
+  // $(".createNewProject_click_btn").click(function () {
+  //   $(".project_action_wrapper_category, .slice_line_category").toggleClass("active")
+  // });
+
+  // $(".all_template_btn").click(function () {
+  //   $(".project_action_wrapper_templates").toggleClass("active")
+  // });
+
+  $(".createNewProject_click_btn").click(function () {
+    // Close templates if open
+    if ($(".project_action_wrapper_templates").hasClass("active")) {
+      $(".project_action_wrapper_templates").removeClass("active");
+    }
+
+    // Toggle category and slice line
+    $(".project_action_wrapper_category, .slice_line_category").toggleClass(
+      "active"
+    );
+  });
+
+  $(".all_template_btn").click(function () {
+    $(".project_action_wrapper_templates").toggleClass("active");
+  });
+
+  $(".create_ai_btn").click(function () {
+    $(".create_ai_wrapper").toggleClass("active");
+  });
+
+  // collapse item
+  $(".dashboard_single_item_header").click(function () {
+    $(this)
+      .closest(".dashboard_single_item")
+      .find(".dashboard_single_item_content , .expand_item , .collapse_item")
+      .toggle();
+  });
+
+  // collapse item
+  $(".custom_check_components").click(function () {
+    $(this).find(".checked_item , .unChecked_item").toggle();
+
+    $(this).toggleClass("active");
+  });
+
+  // ----------- phase 5 start ------
+
+  //audience balance click items--
+  $(".toggle_bars").click(function () {
+    $(this)
+      .closest(".audienceBalance_lists_wrapper")
+      .find(".audienceBalance_lists_content , .expand_item , .collapse_item")
+      .toggle();
+  });
+
+  // manageAudience click events start from here
+
+  $(".launch_audience_btn").click(function () {
+    $(".audienceBalance_cost_area,.launch_audience_btn").toggle();
+  });
+
+  $(".payment_cancel_btn").click(function () {
+    $(".audienceBalance_cost_area,.launch_audience_btn").toggle();
+  });
+
+
+  // all modal start -------
+
+  // payment modal
+  $(".payment_confirm_btn ,.paymentModal_x,.pm_cancel").click(function(){
+    $(".paymentModal_wrapper_popUp").toggle();
+  });
+
+  // edit modal 
+  $(".paymentModal_edit_btn , .cancel_editBillModal_btn, .editBillModal_x").click(function(){
+    $(".editBillModal__popUp,.paymentModal_wrapper_popUp").toggle();
+  });
+
+  // payment button modal 
+  $(".stripe_btn , .paypal_btn ,.confirmModal_x,.confirmModal_close_btn").click(function(){
+    $(".confirmModal__popUp").toggle();
+    $(".paymentModal_wrapper_popUp").removeAttr("style");
   });
 
 });

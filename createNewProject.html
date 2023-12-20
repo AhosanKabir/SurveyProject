@@ -1,0 +1,614 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/chosen.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <style>
+        body{
+            background: #f9f9fA;
+        }
+    </style>
+    <body>
+
+        <!---------- navbar area start ----------->
+        <header id="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar_left">
+                        <a href="#" class="nav_thumb">
+                            <img src="assets/img/logo/Logo.png" alt="">
+                        </a>
+                        <ul class="d-none d-lg-flex">
+                            <li>
+                                <a href="#">Start a New Project</a>
+                            </li>
+                            <li>
+                                <a href="#">My Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar_right">
+                        <p class="nav_notify" id="dashboard_nav_notify">
+                            <span><i class="fa-solid fa-bell"></i></span>
+                            <span class="n_count">12</span>
+                        </p>
+                        <div class="nav_user">
+                            <div class="nav_user_active">
+                                <img src="assets/img/thumb/user.png" alt="">
+                                <i class="nav_user_greenCircle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                        <circle cx="8.84623" cy="9.07694" r="7.15385" fill="#4E7C1D" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <span>John.Doe</span>
+                        </div>
+                        
+                        <a href="#" class="menu_btn d-none d-lg-flex">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                            <p>Menu</p>
+                            <span><i class="fa-solid fa-caret-down"></i></span>
+                        </a>
+
+                        <!-------- mobile navbar start --------------->
+                        <div class="mobile_nav d-lg-none d-flex">
+                            <a href="#" class="menu_btn mobile_menu_btn">
+                                <span><i class="fa-solid fa-bars"></i></span>
+                                <p>Menu</p>
+                                <span><i class="fa-solid fa-caret-down"></i></span>
+                            </a>
+
+                            <ul class="mobile_menu" style="display: none;">
+                                <li>
+                                    <a href="#0">Start a New Project</a>
+                                </li>
+                                <li>
+                                    <a href="#0">My Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="createNewProject_main_area">
+            <div class="container">
+                 <!-- search area  -->
+                <div class="createNewProject_search_blk">
+                    <p class="large_title">Create a New Project</p>
+                    <!-- search area  -->
+                    <div>
+                        <div class="search_component">
+                            <span class="fa fa-search"></span>
+                            <input placeholder="What is your project about?">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main area  -->
+                <div class="createNewProject_template_wrapper">
+                    <!-- first block (action) -->
+                    <div class="project_action_wrapper">
+                        <h5>Let’s get started</h5>
+                        <div class="project_action_blk">
+                            <ul>
+                                <li>
+                                    <button class="createNewProject_click_btn">
+                                        <i class="fa-regular fa-file-zipper"></i>
+                                        <span>Create a New Project</span>
+                                    </button>
+                                </li>
+    
+                                <li>
+                                    <button>
+                                        <i class="fa-regular fa-copy"></i>
+                                        <span>Duplicate Existing Project</span>
+                                    </button>
+                                </li>
+    
+                                <li>
+                                    <button>
+                                        <i class="fa-regular fa-address-book"></i>
+                                        <span>Buy Sample</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <div class="project_action_footer">
+                                <p>
+                                    <span class="nav__line"></span>
+                                    <span>or</span>
+                                    <span class="nav__line"></span>
+                                </p>
+                                <button class="primary_btn">
+                                    Start from Scratch
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <span class="slice_line"></span>
+
+                    <!-- second block (category)  -->
+                    <div class="project_action_wrapper project_action_wrapper_category">
+                        <p class="project_action_title">Choose a <span>Category</span></p>
+                        <div class="project_action_blk">
+                            <div class="scroll_action">
+                                <ul>
+                                    <li>
+                                        <button class="create_ai_btn">
+                                            <i class="fa-solid fa-microchip"></i>
+                                            <div>
+                                                <h4>Create with AI</h4>
+                                                <p>
+                                                    AI-powered suggestions for a tailored survey. Enhance your project effortlessly with intelligent insights.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+        
+                                    <li>
+                                        <button class="all_template_btn">
+                                            <i class="fa-solid fa-table-cells"></i>
+                                            <div>
+                                                <h4>All Templates</h4>
+                                                <p>
+                                                    Explore a diverse range of survey templates covering various topics and objectives.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+        
+                                    <li>
+                                        <button>
+                                            <i class="fa-regular fa-chart-bar"></i>
+                                            <div>
+                                                <h4>Ad Testing</h4>
+                                                <p>
+                                                    Optimize ad performance with templates designed to gauge audience response.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+    
+                                    <li>
+                                        <button>
+                                            <i class="fa-solid fa-users"></i>
+                                            <div>
+                                                <h4>Audience</h4>
+                                                <p>
+                                                    Understand and engage your audience effectively with specialized survey templates.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+    
+                                    <li>
+                                        <button>
+                                            <i class="fa-regular fa-star"></i>
+                                            <div>
+                                                <h4>Brand Performance</h4>
+                                                <p>
+                                                    Evaluate brand impact and perception through targeted surveys and insightful templates.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+    
+                                    <li>
+                                        <button>
+                                            <i class="fa-solid fa-paintbrush"></i>
+                                            <div>
+                                                <h4>Design</h4>
+                                                <p>
+                                                    Capture user preferences and refine your design strategies with dedicated survey templates.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+    
+                                    <li>
+                                        <button>
+                                            <i class="fa-regular fa-lightbulb"></i>
+                                            <div>
+                                                <h4>Product Innovation</h4>
+                                                <p>
+                                                    Gather feedback for innovative product development using specialized templates.
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="slice_line slice_line_category"></span>
+
+                    <!-- third block (templates) -->
+                    <div class="project_action_wrapper project_action_wrapper_templates" id="project_action_wrapper_template">
+                        <p class="project_action_title">Choose a <span>Starting Template</span></p>
+                        <div class="project_action_blk">
+                            <div class="scroll_action">
+                                <div class="row g-2">
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Price Testing</h5>
+                                                <p>
+                                                    Find the optimal price for your product.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Name Testing</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Price Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo A/B Test</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Message & Claims Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Concept Testing</h5>
+                                                <p>
+                                                    Assess the viability of new product or service ideas, improve existing offerings, identify customer needs and preferences, and inform marketing strategies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Design</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo Design Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a logo in communicating a brand's values and messaging, assessing its memorability and recognition, and informing design decisions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Audience</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>External Survey (Audience Only)</h5>
+                                                <p>
+                                                    Buy sample from MakeOpinion for external surveys.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Name Testing</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Price Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo A/B Test</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Message & Claims Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Concept Testing</h5>
+                                                <p>
+                                                    Assess the viability of new product or service ideas, improve existing offerings, identify customer needs and preferences, and inform marketing strategies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Design</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo Design Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a logo in communicating a brand's values and messaging, assessing its memorability and recognition, and informing design decisions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Audience</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>External Survey (Audience Only)</h5>
+                                                <p>
+                                                    Buy sample from MakeOpinion for external surveys.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Name Testing</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Price Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo A/B Test</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Message & Claims Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a brand or product name in terms of memorability, relevance, differentiation, and cultural appropriateness, and to inform brand strategy and messaging.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Product Innovation</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Concept Testing</h5>
+                                                <p>
+                                                    Assess the viability of new product or service ideas, improve existing offerings, identify customer needs and preferences, and inform marketing strategies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Design</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>Logo Design Testing</h5>
+                                                <p>
+                                                    Evaluate the effectiveness of a logo in communicating a brand's values and messaging, assessing its memorability and recognition, and informing design decisions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- single item -->
+                                        <div class="project_action_single_template">
+                                            <div class="past_header">
+                                                <p>Audience</p>
+                                                <span class="nav__line"></span>
+                                            </div>
+
+                                            <div class="past_content">
+                                                <h5>External Survey (Audience Only)</h5>
+                                                <p>
+                                                    Buy sample from MakeOpinion for external surveys.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth block(ai) content -->
+                    <div class="project_action_wrapper create_ai_wrapper" id="project_action_wrapper_template">
+                        <p class="project_action_title">Create with <span>AI</span></p>
+
+                        <div class="project_action_blk">
+                            <div class="scroll_action">
+                                <div class="ai_template_wrapper"> 
+                                    <div class="ai_thumb">
+                                        <img src="assets/img/thumb/Illustration.png" alt="">
+                                    </div>
+                                    <div class="ai_content">
+                                        <h3>Intelligent Project Assistance</h3>
+                                        <p>
+                                            Enter a prompt and let our smart algorithms create surveys, audiences, and offer insightful suggestions. Streamline your process and enhance your project setup experience.
+                                        </p>
+                                        <button class="primary_btn btn_default">
+                                            Create Project with AI
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/chosen.jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+
+    </body>
+</html>

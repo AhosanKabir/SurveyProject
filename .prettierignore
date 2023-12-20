@@ -33,4 +33,25 @@ progress.html
 progressAudience.html
 recontacts.html
 
+# phase 4 start --------------
+dashboard.html
+dashboardEmpty.html
+whatsNewModal.html
+createNewProject.html
+aiProjectSetting.html
+createProjectModal.html
+nextAudienceModal.html
+tooltip1.html
+tooltip2.html
+tooltip3.html
+tooltip4.html
+surveyPrompt.html
+surveyPromptLoading.html
+surveyPromptAll.html
+startingTemplate.html
 main.css
+
+
+# phase 5 start --------------
+manageAudience.html
+comments.html
